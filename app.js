@@ -19,7 +19,7 @@ app.use(bodyparser.urlencoded({
 
 
 mongoose.connect(
-  "mongodb+srv://suhailnagore4:wBZJWpeIJ1zNVtho@cluster0.6po2xot.mongodb.net/UserDB",
+    process.env.MONGO_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
